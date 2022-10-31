@@ -40,12 +40,14 @@ app.get('/getUser', (req, res) => {
             course3
         }
 
-        let data = {
-            user, 
+        let user = {
+            username: req.body.object.user.username,
+            password: req.body.object.user.password,
+            email: req.body.object.user.email,
             courses
         }
 
-        return res.status(200).json(data);
+        return res.status(200).json(user);
     }
     catch{
         return res.status(500);
