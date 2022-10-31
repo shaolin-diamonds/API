@@ -5,12 +5,6 @@ app.use(express.json());
 
 const PORT = 3000;
 
-let user = {
-    username: "skolvikes",
-    password: "Password1",
-    email: "kcousins@gmail.com"
-}
-
 let course1 = {
     courseId: "123",
     courseName: "Math",
